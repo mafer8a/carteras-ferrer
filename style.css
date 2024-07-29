@@ -1,0 +1,359 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing no suma espacios*/
+    box-sizing: border-box;
+}
+
+.letra-home {
+    font-style: oblique;
+    color: fuchsia;
+}
+
+.fondo {
+    object-fit: cover;
+}
+
+header div img {
+    width: 60%;
+    height: 60%;
+    /*ocupe todo el fondo, en este caso el div */
+    object-fit: cover;
+}     
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 20%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tamaño-img {
+   width: 18rem;
+}
+
+.tamaño-img-dos {
+    width: 18rem;
+}
+    
+.container {
+    padding: 15px;
+}
+
+.button-container {
+    padding-top: 20px;
+    text-align: center;
+}
+.button-container button {
+    padding: 10px 20px;
+    border-color: mediumorchid;
+    width: 15%;
+}
+
+ ul {
+    list-style-type: none;
+}
+
+  nav {
+    background-color: #333;
+ }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+nav ul li {
+    padding: 14px 20px;
+    color: fuchsia;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+nav ul li:hover {
+    background-color: #575757; /* Color de fondo al pasar el mouse */
+}
+
+.boton-izquierda {
+    width: 30%;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+h2 {
+    padding-top: 12px;
+    text-align: center;
+}
+
+.dividir {
+    width: 28%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.derecha {
+    text-align:left;
+}
+
+  .card2 {
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+h2 {
+    color: mediumorchid;
+    font-size: 30px;
+}
+
+h1 {
+    color: mediumorchid;
+    font-size: 40px;
+    text-align: center;
+}
+
+.width-img-cat {
+    width:50%
+}
+
+.width-img-cat-dos {
+    width:65%
+}
+
+.button-categoria {
+    text-align: none;
+}
+.button-categoria button {
+    padding: 10px 20px;
+    border-color: mediumorchid;
+    width: 100%;
+}
+
+
+button {
+  color: mediumorchid;  
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.circular-imagen {
+    border-radius: 50%;
+}
+
+  footer lu li a {
+    color: mediumorchid;
+}
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #000;
+}
+
+ button a {
+    color: mediumorchid;
+ }
+
+.baja-parrafo {
+    margin-top: 15px;
+}
+
+.acho-img-cartera {
+    width: 90%;
+}
+
+.acho-img-mochila {
+    width: 50%;
+}
+
+.acho-img-billetera {
+    width: 40%;
+}
+
+a:hover {
+    color: mediumorchid;
+}
+
+.section-generico {
+    margin:0 30px;
+    display: grid;
+    align-content: center;
+}  
+
+                
+.section-nuevo {
+    grid-template-rows: 30%;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 10px;
+}   
+
+.visualizar-card-categoria {
+    display: block;
+}
+
+.ocultar-card-categoria {
+    display: none;
+}
+
+.section-cat {
+    grid-template-rows: repeat(2, 30%);
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+}   
+
+.container-center {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000;
+    color: #ccc;
+}
+
+footer ul li a {
+    color: #ccc;
+}
+
+.centrar-content {
+    justify-content: center;
+}
+
+.padding-contacto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* mq tablet*/
+@media screen  and (max-width:768px) {
+    header div img {
+        width: 100%;
+        height: 100%;
+    }    
+    .section-nuevo {
+        grid-template-rows:  repeat(2, 30%);
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 10px;
+    } 
+
+    .visualizar-card-categoria {
+        display: none;
+    }
+    
+    .ocultar-card-categoria {
+        display: block;
+    }
+
+    .section-cat {
+        grid-template-rows: repeat(2, 30%);
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+    }   
+
+    .tamaño-img-dos {
+        width: 13.5rem;
+    }
+
+    .acho-img-mochila {
+        width: 60%;
+    }
+
+    .acho-img-billetera {
+        width: 100%;
+    }
+}
+
+/* mq smart phone*/
+@media (min-width: 100px) and (max-width:320px) {
+
+    header div img {
+        width: 100%;
+        height: 100%;
+    }    
+
+    .section-nuevo {
+        grid-template-rows: 30%;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    } 
+
+    .tamaño-img {
+        width: 100%;
+    }
+
+    .section-cat {
+        grid-template-rows: 30%;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }   
+
+    .boton-izquierda {
+        width: 100%;
+    }
+
+    .button-container button {
+        width: 80%;
+    }
+
+
+    .section-envio {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }   
+    
+    h3 {
+        font-size: calc(1rem + .6vw);
+      }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0.5rem;
+    }
+
+    .margin-cero {
+        margin: 10px;
+    }
+
+    .tamaño-img-dos {
+        width: 13.5rem;
+    }
+
+    .acho-img-mochila {
+        width: 100%;
+    }
+
+    .acho-img-billetera {
+        width: 100%;
+    }
+}
