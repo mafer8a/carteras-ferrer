@@ -42,6 +42,10 @@ header div img {
 .tamaño-img-dos {
     width: 18rem;
 }
+
+.tamaño-img-tres {
+    width: 15rem;
+}
     
 .container {
     padding: 15px;
